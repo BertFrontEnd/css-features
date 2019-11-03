@@ -44,7 +44,7 @@ section:hover .desktop {
   bottom: 0;
   z-index: 3;
   transition-delay: 0.2s;
-  /*  background: url('') center no-repeat; */
+  background: url('img/class-phone.jpg') center no-repeat;
 }
 
 .tablet {
@@ -54,7 +54,7 @@ section:hover .desktop {
   bottom: 0;
   z-index: 2;
   transition-delay: 0.4s;
-  /*  background: url('') center no-repeat; */
+  background: url('img/class-tablet.jpg') center no-repeat;
 }
 
 .desktop {
@@ -64,5 +64,5 @@ section:hover .desktop {
   bottom: 0;
   z-index: 1;
   transition-delay: 0.6s;
-  /*  background: url('') center no-repeat; */
+  background: url('img/class-desktop.jpg') center no-repeat;
 }
