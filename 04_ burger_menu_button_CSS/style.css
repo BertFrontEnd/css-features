@@ -55,13 +55,13 @@
     transform: translateY(5px);
 }
 
-.menu-btn_active span:before {
+.menu-btn_active span::before {
     transform: rotate(-35deg);
     width: 10px;
     transform-origin: left bottom;
 }
 
-.menu-btn_active span:after {
+.menu-btn_active span::after {
     transform: rotate(35deg);
     width: 10px;
     transform-origin: left top;
