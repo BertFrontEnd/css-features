@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+.section {
+  display: flex;
+  height: 100vh;
+  background-color: #612c69;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.5s;
+}
+
+.menu-btn__toggle {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  margin-top: -1px;
+  height: 2px;
+  margin-left: -10px;
+  background-color: #FCCF61;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: "";
+  display: block;
+  transition: 0.5s;
+}
+
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+
+.menu-btn__active span::before {
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left bottom;
+}
+
+.menu-btn__active span::after {
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left top;
+}
+
+.menu-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.menu-nav {
+  background-color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-right: -25px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.menu-nav__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #459ed5;
+  margin-right: 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.menu-nav__link:hover {
+  color: #fd823e;
+  transition: 0.5s;
+}
+
+.menu-nav {
+  transition: 0.5s;
+  transform-origin: right center;
+  transform: scaleX(0) translateX(100%);
+  opacity: 0;
+}
+
+.menu-nav__active {
+  transition: 0.5s;
+  transform-origin: right center;
+  transform: scaleX(1) translateX(0%);
+  opacity: 1;
+}
