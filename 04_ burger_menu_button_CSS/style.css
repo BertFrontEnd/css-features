@@ -21,7 +21,8 @@
     transition: 0.5s;
 }
 
-.menu-btn:hover {
+.menu-btn:hover,
+.menu-btn_toggle {
     box-shadow: 0 5px 20px 0 rgba(0,0,0,0.5);
     transform: translateY(-5px);
     transition: 0.5s;
