@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f6ee;
+  font-family: sans-serif;
+  color: #2473d5;
+  font-size: 24px;
+}
+
+.links {
+  margin: 50px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #2473d5;
+  position: relative;
+}
+
+.left .first::before {
+  content: "";
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #19d4ee;
+  transition: 0.2s;
+}
+
+.left .first:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.left .second::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #19d4ee;
+  transition: 0.2s;
+}
+
+.left .third::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #19d4ee;
+  transition: 0.2s;
+}
+
+.left .second:hover::before,
+.left .third:hover::before {
+  width: 100%;
+}
+
+.center a::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #19d4ee;
+  transition: 0.2s;
+  transform: scaleX(0);
+}
+
+.center a:hover::before {
+  transform: scaleX(1);
+}
+
+.right a::before {
+  content: "";
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #19d4ee;
+  transition: 0.2s;
+}
+
+.right a:hover::before {
+  width: 100%;
+}
