@@ -1,11 +1,14 @@
-const sendBnt = document.querySelector('aside');
+const sendBtn = document.querySelector("aside");
+const myEnvelope = document.querySelector(".envelope");
 const myFlap = document.querySelector('.envelope__flap');
 const myPaper = document.querySelector('.envelope__paper');
 
-sendBnt.onclick = function(e) {
-  myFlap.classList.toggle('envelope__flap-close');
+sendBtn.onclick = function() {
+  myFlap.classList.toggle("envelope__flap-close");
   myPaper.classList.toggle("envelope__paper-close");
-  console.log(sendBnt);
+  myEnvelope.classList.toggle("envelope__send");
+  console.log(sendBtn);
   console.log(myFlap);
   console.log(myPaper);
+  console.log(myEnvelope);
 };
