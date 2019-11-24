@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20%;
+  transform-style: inherit;
+  width: 100vw;
+}
+
+header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform-origin: center;
+  min-height: 100vh;
+  background-image: url('img/car01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Parallax */
+
+  transform: translateZ(-1px) scale(2);
+}
