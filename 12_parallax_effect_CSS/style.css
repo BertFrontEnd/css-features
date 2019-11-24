@@ -11,7 +11,6 @@ html {
 body {
   font-family: sans-serif;
   color: #fff;
-
   perspective: 1px;
   transform-style: preserve-3d;
   overflow-y: scroll;
@@ -42,7 +41,7 @@ header::before {
   background-repeat: no-repeat;
   background-size: cover;
 
-  /* Parallax */
+  /* PARALLAX */
 
   transform: translateZ(-1px) scale(2);
 }
