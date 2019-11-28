@@ -130,13 +130,13 @@ section {
 }
 
 .menu__btn--active a::before {
-  transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(-45deg);
   transform-origin: left center;
   width: 12px;
 }
 
 .menu__btn--active a::after {
-  transform: translateX(-50%) rotate(-45deg);
+  transform: translateX(-50%) rotate(45deg);
   transform-origin: left center;
   width: 12px;
 }
