@@ -80,13 +80,17 @@ section {
   font-weight: 900;
 }
 
+.menu__list a:hover {
+  color: #fff;
+}
+
 .menu__btn {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  right: -15px;
-  width: 30px;
-  height: 30px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -99,4 +103,40 @@ section {
 .menu__btn a {
   text-decoration: none;
   color: #95a5a6;
+}
+
+.menu__btn a::before,
+.menu__btn a::after {
+  display: block;
+  content: '';
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.menu__btn a::before {
+  transform: rotate(45deg);
+  transform-origin: center right;
+}
+
+.menu__btn a::after {
+  transform: rotate(-45deg);
+  transform-origin: center right;
+}
+
+.menu__btn--active a::before {
+  transform: translateX(-50%) rotate(45deg);
+  transform-origin: left center;
+  width: 12px;
+}
+
+.menu__btn--active a::after {
+  transform: translateX(-50%) rotate(-45deg);
+  transform-origin: left center;
+  width: 12px;
 }
