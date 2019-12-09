@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -5%);
+          transform: translate(-50%, -5%);
+}
+
+.button {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  background-color: #536dfe;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transform: translateX(-4em) skew(-45deg);
+          transform: translateX(-4em) skew(-45deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  -webkit-animation: move-light 0.5s;
+          animation: move-light 0.5s;
+}
+
+@-webkit-keyframes move-light {
+  from {
+    -webkit-transform: translateX(-4em) skew(-45deg);
+            transform: translateX(-4em) skew(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(10em) skew(-45deg);
+            transform: translateX(10em) skew(-45deg);
+  }
+}
+
+@keyframes move-light {
+  from {
+    -webkit-transform: translateX(-4em) skew(-45deg);
+            transform: translateX(-4em) skew(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(10em) skew(-45deg);
+            transform: translateX(10em) skew(-45deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
