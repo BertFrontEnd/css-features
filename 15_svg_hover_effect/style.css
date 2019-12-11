@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  margin: 25px auto;
+  font-family: sans-serif;
+}
+
+span.title {
+  display: block;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.basic-box {
+  position: relative;
+  text-transform: uppercase;
+  width: 130px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+svg rect {
+  stroke: #1e90ff;
+  stroke-width: 1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  stroke-dasharray: 400, 0;
+}
+
+.basic-box:hover svg rect {
+  stroke-width: 5;
+  stroke-dasharray: 35, 245;
+  stroke-dashoffset: 38;
+}
+/*# sourceMappingURL=style.css.map */
