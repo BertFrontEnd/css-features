@@ -1,0 +1,83 @@
+$bg-color: #363636;
+$str-color: #fff;
+$whatsapp-color: #08bb07;
+$vkontakte-color: #467fc2;
+$twitter-color: #02acfa;
+$instagram-color: #fb7046;
+$google-color: #fa3e11;
+$box-shadow-scatter: 15px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  color: $str-color;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.social__item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid $str-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.whatsapp {
+  &:hover {
+    border-color: $whatsapp-color;
+    box-shadow: 0px 0px $box-shadow-scatter $whatsapp-color;
+    color: $whatsapp-color;
+  }
+}
+
+.vkontakte {
+  &:hover {
+    border-color: $vkontakte-color;
+    box-shadow: 0px 0px $box-shadow-scatter $vkontakte-color;
+    color: $vkontakte-color;
+  }
+}
+
+.twitter {
+  &:hover {
+    border-color: $twitter-color;
+    box-shadow: 0px 0px $box-shadow-scatter $twitter-color;
+    color: $twitter-color;
+  }
+}
+
+.instagram {
+  &:hover {
+    border-color: $instagram-color;
+    box-shadow: 0px 0px $box-shadow-scatter $instagram-color;
+    color: $instagram-color;
+  }
+}
+
+.google {
+  &:hover {
+    border-color: $google-color;
+    box-shadow: 0px 0px $box-shadow-scatter $google-color;
+    color: $google-color;
+  }
+}

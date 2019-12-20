@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social {
+  color: #fff;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 450px;
+}
+
+.social__item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.whatsapp:hover {
+  border-color: #08bb07;
+  -webkit-box-shadow: 0px 0px 15px #08bb07;
+          box-shadow: 0px 0px 15px #08bb07;
+  color: #08bb07;
+}
+
+.vkontakte:hover {
+  border-color: #467fc2;
+  -webkit-box-shadow: 0px 0px 15px #467fc2;
+          box-shadow: 0px 0px 15px #467fc2;
+  color: #467fc2;
+}
+
+.twitter:hover {
+  border-color: #02acfa;
+  -webkit-box-shadow: 0px 0px 15px #02acfa;
+          box-shadow: 0px 0px 15px #02acfa;
+  color: #02acfa;
+}
+
+.instagram:hover {
+  border-color: #fb7046;
+  -webkit-box-shadow: 0px 0px 15px #fb7046;
+          box-shadow: 0px 0px 15px #fb7046;
+  color: #fb7046;
+}
+
+.google:hover {
+  border-color: #fa3e11;
+  -webkit-box-shadow: 0px 0px 15px #fa3e11;
+          box-shadow: 0px 0px 15px #fa3e11;
+  color: #fa3e11;
+}
+/*# sourceMappingURL=style.css.map */

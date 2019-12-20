@@ -1,5 +1,9 @@
 {
-  "cSpell.words": ["checkmark"],
+  "cSpell.words": [
+    "checkmark",
+    "vkontakte",
+    "whatsapp"
+  ],
   "editor.tabSize": 2,
   "prettier.trailingComma": "es5",
   "prettier.jsxSingleQuote": true,
