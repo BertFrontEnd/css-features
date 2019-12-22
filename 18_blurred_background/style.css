@@ -41,8 +41,7 @@ h1,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 50%;
-  height: 50%;
+  margin: 20px;
   width: 500px;
   height: 300px;
   -webkit-box-shadow: 1px 1px 4px rgba(14, 14, 14, 0.3);
@@ -63,5 +62,7 @@ h1,
   background: inherit;
   -webkit-filter: blur(5px);
           filter: blur(5px);
+  -webkit-filter: url(#blur);
+          filter: url(#blur);
 }
 /*# sourceMappingURL=style.css.map */
