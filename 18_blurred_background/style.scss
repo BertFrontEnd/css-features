@@ -38,9 +38,11 @@ h1,
   text-shadow: 0 1px 0 #333;
   color: #fff;
   background: inherit;
+  cursor: move;
   &:before {
     content: '';
     position: absolute;
+
     top: 0;
     left: 0;
     bottom: 0;
