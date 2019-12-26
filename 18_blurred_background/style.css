@@ -50,6 +50,7 @@ h1,
   text-shadow: 0 1px 0 #333;
   color: #fff;
   background: inherit;
+  cursor: move;
 }
 
 .block:before {
