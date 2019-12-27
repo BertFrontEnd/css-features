@@ -23,9 +23,17 @@ body {
   visibility: hidden;
 }
 
+.checkbox:checked + .checkbox-label {
+  left: 54px;
+}
+
+.checkbox:checked + .checkbox-label:after {
+  background-color: #27ae60;
+}
+
 .checkbox-group {
   position: relative;
-  width: 85px;
+  width: 80px;
   height: 30px;
   background-color: #333;
   border-radius: 50px;
@@ -37,7 +45,7 @@ body {
   content: '';
   position: absolute;
   height: 2px;
-  width: 56px;
+  width: 52px;
   top: 14px;
   left: 14px;
   background-color: #111;
@@ -60,9 +68,12 @@ body {
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
   background: -webkit-gradient(linear, left top, left bottom, from(#fcfff4), color-stop(40%, #dfe5d7), to(#b3bead));
   background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 
-.checkbox-label:after {
+.checkbox-label::after {
   content: '';
   position: absolute;
   width: 10px;

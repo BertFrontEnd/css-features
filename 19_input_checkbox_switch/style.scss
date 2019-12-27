@@ -7,6 +7,7 @@ $alphaInsetLabel: 0.3;
 $bgcLine: #111;
 $bgLabel: #ecf0f1;
 $bgcLabel: #333;
+$bgcLabelAfter: #27ae60;
 $colorGradient01: #fcfff4;
 $colorGradient02: #dfe5d7;
 $colorGradient03: #b3bead;
@@ -32,11 +33,17 @@ body {
 
 .checkbox {
   visibility: hidden;
+  &:checked + .checkbox-label {
+    left: 54px;
+  }
+  &:checked + .checkbox-label:after {
+    background-color: $bgcLabelAfter;
+  }
 }
 
 .checkbox-group {
   position: relative;
-  width: 85px;
+  width: 80px;
   height: 30px;
   background-color: #333;
   border-radius: 50px;
@@ -45,7 +52,7 @@ body {
     content: '';
     position: absolute;
     height: 2px;
-    width: 56px;
+    width: 52px;
     top: 14px;
     left: 14px;
     background-color: $bgcLine;
@@ -71,7 +78,9 @@ body {
     $colorGradient02 40%,
     $colorGradient03 100%
   );
-  &:after {
+  transition: all 0.4s ease;
+  cursor: pointer;
+  &::after {
     content: '';
     position: absolute;
     width: 10px;
@@ -80,6 +89,6 @@ body {
     background-color: $bgcLabel;
     top: 6px;
     left: 6px;
-    box-shadow: $boxShadowOfCheckBox * 10;
+    box-shadow: $boxShadowOfCheckBox;
   }
 }
