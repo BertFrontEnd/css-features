@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #42a5f5;
+  color: #fff;
+}
+
+.checkbox {
+  visibility: hidden;
+}
+
+.checkbox-group {
+  position: relative;
+  width: 85px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.checkbox-group::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 56px;
+  top: 14px;
+  left: 14px;
+  background-color: #111;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.checkbox-label {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  background: #ecf0f1;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfff4), color-stop(40%, #dfe5d7), to(#b3bead));
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+}
+
+.checkbox-label:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  top: 6px;
+  left: 6px;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+/*# sourceMappingURL=style.css.map */

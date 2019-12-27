@@ -1,0 +1,85 @@
+$colorInsetTop: #000;
+$colorInsetBottom: #fff;
+$colorLabel: $colorInsetTop;
+$alphaInsetTop: 0.5;
+$alphaInsetBottom: 0.2;
+$alphaInsetLabel: 0.3;
+$bgcLine: #111;
+$bgLabel: #ecf0f1;
+$bgcLabel: #333;
+$colorGradient01: #fcfff4;
+$colorGradient02: #dfe5d7;
+$colorGradient03: #b3bead;
+
+$boxShadowOfCheckBox: inset 0px 1px 1px rgba($colorInsetTop, $alphaInsetTop),
+  0px 1px 0px rgba($colorInsetBottom, $alphaInsetBottom);
+$boxShadowOfLabel: 0px 2px 5px 0px rgba($colorLabel, $alphaInsetLabel);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #42a5f5;
+  color: #fff;
+}
+
+.checkbox {
+  visibility: hidden;
+}
+
+.checkbox-group {
+  position: relative;
+  width: 85px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50px;
+  box-shadow: $boxShadowOfCheckBox;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 56px;
+    top: 14px;
+    left: 14px;
+    background-color: $bgcLine;
+    border-radius: 50px;
+    box-shadow: $boxShadowOfCheckBox;
+  }
+}
+
+.checkbox-label {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  background: $bgLabel;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  box-shadow: $boxShadowOfLabel;
+  background: linear-gradient(
+    to bottom,
+    $colorGradient01 0%,
+    $colorGradient02 40%,
+    $colorGradient03 100%
+  );
+  &:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $bgcLabel;
+    top: 6px;
+    left: 6px;
+    box-shadow: $boxShadowOfCheckBox * 10;
+  }
+}
