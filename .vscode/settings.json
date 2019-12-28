@@ -1,11 +1,8 @@
 {
-  "cSpell.words": [
-    "checkmark",
-    "vkontakte",
-    "whatsapp"
-  ],
+  "cSpell.words": ["checkmark", "vkontakte", "whatsapp"],
   "editor.tabSize": 2,
   "prettier.trailingComma": "es5",
   "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "liveServer.settings.port": 5500
 }
