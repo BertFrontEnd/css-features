@@ -1,2 +1,2 @@
 # css-features
- Various CSS effects
+ Various CSS effects by Glo Academy
